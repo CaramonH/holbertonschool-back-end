@@ -19,9 +19,12 @@ if __name__ == '__main__':
     NUMBER_OF_DONE_TASKS = len(completed_tasks)
     TOTAL_NUMBER_OF_TASKS = len(response)
 
+    # Using custom placeholders for indentation
+    INDENT = "    "  # 4 spaces for each level of indentation
+
     print("Employee {} is done with tasks({}/{}):".format(
         EMPLOYEE_NAME, NUMBER_OF_DONE_TASKS, TOTAL_NUMBER_OF_TASKS
     ))
 
     for task in completed_tasks:
-        print("\t {}".format(task['title']))
+        print("{}{}".format(INDENT, task['title']))
