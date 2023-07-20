@@ -5,8 +5,8 @@ API set up to retrieve data from a url
 import requests
 import sys
 
-if __name__ == "__main__":
-    API_URL = "https://jsonplaceholder.typicode.com"
+if __name__ == '__main__':
+    API_URL = 'https://jsonplaceholder.typicode.com'
 
     id = sys.argv[1]
     request = requests.get('{}/users/{}/todos'.format(
@@ -14,8 +14,8 @@ if __name__ == "__main__":
 
     response = request.json()
 
-    completed_tasks = [task for task in response if task["completed"]]
-    EMPLOYEE_NAME = response[0]["user"]["name"]
+    completed_tasks = [task for task in response if task['completed']]
+    EMPLOYEE_NAME = response[0]['user']['name']
     NUMBER_OF_DONE_TASKS = len(completed_tasks)
     TOTAL_NUMBER_OF_TASKS = len(response)
 
@@ -24,4 +24,4 @@ if __name__ == "__main__":
     ))
 
     for task in completed_tasks:
-        print("\t {}".format(task["title"]))
+        print("\t {}".format(task['title']))
