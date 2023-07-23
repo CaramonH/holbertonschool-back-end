@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""API set up to retrieve data from a url"""
+"""Get info from an api"""
 import requests
 
 
