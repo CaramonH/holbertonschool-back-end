@@ -27,4 +27,3 @@ if __name__ == "__main__":
     import sys
 
     display_employee_progress(int(sys.argv[1]))
-
