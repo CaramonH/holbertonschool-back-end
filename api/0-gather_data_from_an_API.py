@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Get info from an api"""
+"""Gets infro about user from an API"""
 import requests
 
 
@@ -27,3 +27,4 @@ if __name__ == "__main__":
     import sys
 
     display_employee_progress(int(sys.argv[1]))
+
